@@ -85,12 +85,6 @@ Before initialize the terraform, we have to enable the following Google Cloud Se
     ```sh
     terraform apply plans.tfplan
     ```
-
-1. Clean up after you’re done:
-
-    ```sh
-    terraform destroy -var-file=var.tfvars 
-    ```
-
+    
 ----
 
