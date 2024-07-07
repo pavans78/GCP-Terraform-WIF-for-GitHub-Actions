@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "gcs-bucket-078"
+    bucket = "gcs-bucket"
     prefix = "tf-state-wif"
   }
 }

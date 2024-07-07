@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "google" {
-  project = "acquired-storm-428614-i2"
+  project = var.project_id
   region  = "us-central1"
 }
 

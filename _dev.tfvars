@@ -1,4 +1,4 @@
-project_id = "acquired-storm-428614-i2"
+project_id = "project-id"
 
 pool_id           = "github-actions-cicd1"
 pool_display_name = "GitHub Actions CICD"
@@ -14,5 +14,5 @@ service_account = {
   display_name = "Service Account for github actions"
 }
 
-repository_name = "pavans78/terraform-wif1"
+repository_name = "github-username/repo-name"
 
