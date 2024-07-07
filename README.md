@@ -1,7 +1,7 @@
 
-This repository provides an example of setting up Workload Identity Federation in Google Cloud using Terraform, demonstrating the creation of two resources: a `workload identity pool` and a `workload identity pool provider`.
+This repository provides an example of setting up Workload Identity Federation in Google Cloud using Terraform for GitHub Provider, demonstrating the creation of two resources: a `workload identity pool` and a `workload identity pool provider`.
  
-# Google Cloud Workload Identity Federation:
+# Google Cloud Workload Identity Federation for GitHub Provider:
 
 Workload Identity Federation (WIF) in Google Cloud Platform (GCP) addresses the security challenges associated with managing access from external workloads to GCP resources. Traditionally, accessing GCP resources from outside environments required the use of long-lived service account keys, which posed security risks such as exposure to unauthorized access if not managed properly. WIF offers a more secure and manageable alternative by leveraging federated identities from external identity providers (IdPs).
 
