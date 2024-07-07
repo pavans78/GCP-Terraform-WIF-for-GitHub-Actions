@@ -47,10 +47,6 @@ Need to provide the values to the variables in the dev.tfvars file before run th
 - `provider_id` — GCP workload identity pool provider id
 - `provider_display_name` — GCP workload identity pool provider name
 - `provider_description` — GCP workload identity pool provider description
-- `attribute_condition` — Condition for workload identity pool provider
-- `attribute_mapping` — Attribute mapping (GitHub and Google)
-- `allowed_audiences` — Workload Identity Pool Provider allowed audiences
-- `sa_mapping` — Service Account resource names and corresponding WIF provider attributes
 - `service_account` — Provide a account id and display name for the Service account under service_account block.
 - `repository_name` — Name consists of the user and repository name (ex: githubusername/repo-name)
 
