@@ -7,7 +7,7 @@ Workload Identity Federation (WIF) in Google Cloud Platform (GCP) addresses the 
 
 ## Repository Content
 
-``
+```
 
 gcp-terraform-wif
 ├── README.md
@@ -18,7 +18,7 @@ gcp-terraform-wif
 ├── var.tf
 |__ wif.tf
 
-``
+```
 **`backend.tf`** :
 
 A backend.tf file in Terraform is used to specify the configuration details for Terraform's backend. The backend determines where and how Terraform stores state files, which are crucial for tracking the state of your infrastructure and managing changes over time. It may be local folder or remote backed (ex: s3, azurerm , gcs). In this repo , I used the GCS bucket as remote backend.
