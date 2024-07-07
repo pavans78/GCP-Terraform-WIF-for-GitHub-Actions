@@ -57,10 +57,10 @@ jobs:
         working-directory: ./infra
         shell: sh
         run: |
-          terraform plan -var-file=_dev.tfvars -out=plans.tfplan
+          terraform plan -var-file=_dev.tfvars -out=plans.tfplan -destroy
 
       - name: Apply terraform changes 🌳
         working-directory: ./infra
         shell: sh
         run: |
-          terraform apply -destroy plans.tfplan 
+          terraform apply plans.tfplan
