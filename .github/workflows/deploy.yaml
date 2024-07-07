@@ -27,23 +27,14 @@ jobs:
         name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
         with:
-          workload_identity_provider: "projects/887766566173/locations/global/workloadIdentityPools/github-actions/providers/github-actions"
-          service_account: "sa-github-actions@acquired-storm-428614-i2.iam.gserviceaccount.com"
+          workload_identity_provider: "projects/887766566173/locations/global/workloadIdentityPools/github-actions-cicd/providers/github-actions-provider"
+          service_account: "sa-github-actions-cicd@acquired-storm-428614-i2.iam.gserviceaccount.com"
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
         with:
           project_id: "acquired-storm-428614-i2"
 
-      # Configuring the backend file using Github secrets depending upon the environment
-      - name: Prepare environment 🔑
-        working-directory: ./infra
-        shell: sh
-        run: |
-          cat <<EOF > backend.cfg
-          bucket = "tf-firm-shuttle-413014"
-          prefix = "tfstate"
-          EOF
       - name: Initialize terraform 🎬
         working-directory: ./infra
         shell: sh

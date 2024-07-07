@@ -1,3 +1,4 @@
+/*
 resource "google_iam_workload_identity_pool" "github_actions" {
   project                   = var.project_id
   workload_identity_pool_id = var.pool_id
@@ -19,4 +20,4 @@ resource "google_iam_workload_identity_pool_provider" "github_actions" {
     issuer_uri        = "https://token.actions.githubusercontent.com"
   }
 }
-
+*/
